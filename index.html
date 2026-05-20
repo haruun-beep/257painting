@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>25/7 Painting | Edmonton's Premium Painting Company</title>
+  <meta name="description" content="Edmonton's fastest painting company. Free virtual quotes — no house call needed. Professional residential and commercial painting with same-week availability." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ══════════════════ NAV ══════════════════ -->
+<nav class="nav nav-transparent" id="nav">
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-badge">25/7</div>
+    <span>25/7</span>&nbsp;Painting
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="why-us.html">Why 25/7</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="quote.html" class="nav-cta">Get Free Quote</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="about.html">About</a>
+  <a href="why-us.html">Why 25/7</a>
+  <a href="contact.html">Contact</a>
+  <a href="quote.html" class="mobile-cta">Get Free Quote</a>
+</div>
+
+<div class="page-wrap">
+
+  <!-- ══════════════════ HERO ══════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1920&q=90" alt="" loading="eager" />
+    </div>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <div class="hero-eyebrow-dot"></div>
+          Edmonton's Premier Painting Company
+        </div>
+        <h1 class="hero-h1">
+          <span class="word" style="animation-delay:.20s">The </span><span class="word highlight" style="animation-delay:.34s">Faster</span><span class="word" style="animation-delay:.48s"> Way</span><br>
+          <span class="word" style="animation-delay:.62s">to a </span><span class="word" style="animation-delay:.76s">Fresh</span><span class="word" style="animation-delay:.90s"> Coat.</span>
+        </h1>
+        <p class="hero-sub">Skip the house call. Upload a video walkthrough or book a live virtual tour — and get a professional paint quote within 24 hours. Free, fast, and zero obligation.</p>
+        <div class="hero-ctas">
+          <a href="quote.html" class="btn btn-gold btn-lg">
+            🎨 &nbsp;Get My Free Quote
+          </a>
+          <a href="#how-it-works" class="btn btn-lg" style="background:rgba(255,255,255,.12);color:#fff;border:1.5px solid rgba(255,255,255,.28);backdrop-filter:blur(8px)">
+            ▶ &nbsp;See How It Works
+          </a>
+        </div>
+        <div class="hero-social-proof">
+          <span class="hero-stars">★★★★★</span>
+          <span class="hero-proof-text">5.0 on Google</span>
+          <div class="hero-proof-divider"></div>
+          <span class="hero-proof-text">500+ Homes Painted</span>
+          <div class="hero-proof-divider"></div>
+          <span class="hero-proof-text">Edmonton, AB</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating stat cards (desktop) -->
+    <div class="hero-stats">
+      <div class="hero-stat-card">
+        <div class="hsc-icon">📱</div>
+        <div class="hsc-text">
+          <strong>Virtual Quote</strong>
+          <span>No house call required</span>
+        </div>
+      </div>
+      <div class="hero-stat-card">
+        <div class="hsc-icon">⚡</div>
+        <div class="hsc-text">
+          <strong>24hr Turnaround</strong>
+          <span>Same-week scheduling</span>
+        </div>
+      </div>
+      <div class="hero-stat-card">
+        <div class="hsc-icon">🛡️</div>
+        <div class="hsc-text">
+          <strong>100% Guaranteed</strong>
+          <span>We make it right, always</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero-scroll" onclick="document.querySelector('.marquee-wrap').scrollIntoView({behavior:'smooth'})">
+      <span>Scroll</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ MARQUEE ══════════════════ -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span class="marquee-item">Residential Painting</span><span class="marquee-sep">✦</span>
+      <span class="marquee-item">Commercial Painting</span><span class="marquee-sep">✦</span>
+      <span class="marquee-item">Cabinet Refinishing</span><span class="marquee-sep">✦</span>
+      <span class="marquee-item">Exterior Painting</span><span class="marquee-sep">✦</span>
+      <span class="marquee-item">Free Virtual Quotes</span><span class="marquee-sep">✦</span>
+      <span class="marquee-item">Same-Week Scheduling</span><span class="marquee-sep">✦</span>
+      <span class="marquee-item">100% Satisfaction Guarantee</span><span class="marquee-sep">✦</span>
+      <!-- Duplicate for seamless loop -->
+      <span class="marquee-item">Residential Painting</span><span class="marquee-sep">✦</span>
+      <span class="marquee-item">Commercial Painting</span><span class="marquee-sep">✦</span>
+      <span class="marquee-item">Cabinet Refinishing</span><span class="marquee-sep">✦</span>
+      <span class="marquee-item">Exterior Painting</span><span class="marquee-sep">✦</span>
+      <span class="marquee-item">Free Virtual Quotes</span><span class="marquee-sep">✦</span>
+      <span class="marquee-item">Same-Week Scheduling</span><span class="marquee-sep">✦</span>
+      <span class="marquee-item">100% Satisfaction Guarantee</span><span class="marquee-sep">✦</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════ TRUST BAR ══════════════════ -->
+  <div class="trust-bar">
+    <div class="trust-item reveal">
+      <div class="trust-icon">🏠</div>
+      <div class="trust-stat">
+        <strong data-target="500" data-suffix="+">500+</strong>
+        <span>Homes Painted</span>
+      </div>
+    </div>
+    <div class="trust-div"></div>
+    <div class="trust-item reveal" style="transition-delay:.1s">
+      <div class="trust-icon">⚡</div>
+      <div class="trust-stat">
+        <strong data-target="24" data-suffix="hr">24hr</strong>
+        <span>Quote Turnaround</span>
+      </div>
+    </div>
+    <div class="trust-div"></div>
+    <div class="trust-item reveal" style="transition-delay:.2s">
+      <div class="trust-icon">⭐</div>
+      <div class="trust-stat">
+        <strong data-target="5.0" data-suffix=" Stars">5.0 Stars</strong>
+        <span>Google Rating</span>
+      </div>
+    </div>
+    <div class="trust-div"></div>
+    <div class="trust-item reveal" style="transition-delay:.3s">
+      <div class="trust-icon">🛡️</div>
+      <div class="trust-stat">
+        <strong data-target="100" data-suffix="%">100%</strong>
+        <span>Satisfaction Guarantee</span>
+      </div>
+    </div>
+    <div class="trust-div"></div>
+    <div class="trust-item reveal" style="transition-delay:.4s">
+      <div class="trust-icon">📅</div>
+      <div class="trust-stat">
+        <strong>Same Week</strong>
+        <span>Availability</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════ HOW IT WORKS ══════════════════ -->
+  <section class="section" id="how-it-works" style="background:var(--gold-light)">
+    <div class="container">
+      <div class="centered" style="margin-bottom:56px">
+        <div class="tag reveal">Our Process</div>
+        <h2 class="section-title reveal" style="transition-delay:.1s">How It Works in <em style="color:var(--gold);font-style:italic">7 Steps</em></h2>
+        <p class="section-sub reveal" style="transition-delay:.2s">From your first virtual quote to the final walkthrough — every step engineered for precision, speed, and zero stress.</p>
+      </div>
+      <div class="steps-wrap stagger">
+        <div class="step-card reveal">
+          <div class="step-num">01</div>
+          <div class="step-icon-wrap">📱</div>
+          <h4>Free Virtual Quote</h4>
+          <p>Upload a video walkthrough and photos, or book a live video call with our team. No house visit required — get a quote within 24 hours.</p>
+        </div>
+        <div class="step-card reveal">
+          <div class="step-num">02</div>
+          <div class="step-icon-wrap">📋</div>
+          <h4>Expert Project Planning</h4>
+          <p>Our team reviews your space in detail and creates a tailored plan — right materials, right timeline, right crew for your specific job.</p>
+        </div>
+        <div class="step-card reveal">
+          <div class="step-num">03</div>
+          <div class="step-icon-wrap">📅</div>
+          <h4>Precision Scheduling</h4>
+          <p>We book a time that works for you. Same-week availability in most cases — no waiting three weeks for a crew to show up.</p>
+        </div>
+        <div class="step-card reveal">
+          <div class="step-num">04</div>
+          <div class="step-icon-wrap">🛡️</div>
+          <h4>Comprehensive Site Prep</h4>
+          <p>Every surface, fixture, and floor is protected before a single drop of paint is opened. We treat your home like our own.</p>
+        </div>
+        <div class="step-card reveal">
+          <div class="step-num">05</div>
+          <div class="step-icon-wrap">🖌️</div>
+          <h4>Professional Application</h4>
+          <p>Certified painters, premium materials, and proven technique. Every edge, every corner, every coat — done right the first time.</p>
+        </div>
+        <div class="step-card reveal">
+          <div class="step-num">06</div>
+          <div class="step-icon-wrap">✨</div>
+          <h4>The "Clean-Room" Reveal</h4>
+          <p>We deep-clean after every job. When we leave, you'll only know we were there because of the flawless paint on your walls.</p>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:48px" class="reveal">
+        <a href="quote.html" class="btn btn-gold btn-lg">Start with a Free Virtual Quote →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ SERVICES ══════════════════ -->
+  <section class="section" id="services">
+    <div class="container">
+      <div style="margin-bottom:48px">
+        <div class="tag reveal">What We Do</div>
+        <h2 class="section-title reveal" style="transition-delay:.1s">Painting Built Around <em style="color:var(--gold);font-style:italic">Your Life</em></h2>
+        <p class="section-sub reveal" style="transition-delay:.2s">From a single accent wall to a full commercial buildout — the 25/7 standard applies to every job, every time.</p>
+      </div>
+      <div class="services-grid stagger">
+        <div class="service-card reveal">
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80" alt="Residential interior painting - bright living room" loading="lazy" onerror="this.style.display='none'" />
+            <div class="service-img-overlay"></div>
+            <div class="service-tag-overlay">For Homeowners</div>
+            <div class="service-title-overlay">Residential<br>Painting</div>
+          </div>
+          <div class="service-body">
+            <p>Transform every room in your home with precision and care. We handle interior walls, ceilings, trim, cabinets, and full exterior jobs.</p>
+            <ul class="service-features">
+              <li><div class="check-icon">✓</div> Interior walls, ceilings &amp; trim</li>
+              <li><div class="check-icon">✓</div> Exterior &amp; siding</li>
+              <li><div class="check-icon">✓</div> Cabinet &amp; millwork refinishing</li>
+              <li><div class="check-icon">✓</div> Colour consultation included</li>
+            </ul>
+            <a href="services.html" class="btn btn-gold btn-sm">Explore Residential →</a>
+          </div>
+        </div>
+        <div class="service-card reveal" style="transition-delay:.15s">
+          <div class="service-img" style="background:linear-gradient(135deg,var(--blue-light),var(--gold-light))">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Commercial painting - modern office" loading="lazy" onerror="this.style.display='none'" />
+            <div class="service-img-overlay"></div>
+            <div class="service-tag-overlay" style="background:rgba(58,127,193,.9);color:#fff">For Businesses</div>
+            <div class="service-title-overlay">Commercial<br>Painting</div>
+          </div>
+          <div class="service-body">
+            <p>High-performance finishes with zero business downtime. We work nights and weekends around your schedule — no disruption to your operations.</p>
+            <ul class="service-features">
+              <li><div class="check-icon" style="background:var(--blue-light);color:var(--blue)">✓</div> Offices, retail &amp; restaurants</li>
+              <li><div class="check-icon" style="background:var(--blue-light);color:var(--blue)">✓</div> Warehouses &amp; industrial</li>
+              <li><div class="check-icon" style="background:var(--blue-light);color:var(--blue)">✓</div> Strata &amp; multi-unit properties</li>
+              <li><div class="check-icon" style="background:var(--blue-light);color:var(--blue)">✓</div> After-hours &amp; weekend scheduling</li>
+            </ul>
+            <a href="services.html" class="btn btn-blue btn-sm">Explore Commercial →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ GALLERY ══════════════════ -->
+  <section class="section" style="background:var(--off-white)" id="gallery">
+    <div class="container">
+      <div class="centered" style="margin-bottom:48px">
+        <div class="tag reveal">Our Work</div>
+        <h2 class="section-title reveal" style="transition-delay:.1s">Crafted With <em style="color:var(--gold);font-style:italic">Precision</em></h2>
+        <p class="section-sub reveal" style="transition-delay:.2s">A glimpse of the spaces we've transformed across Edmonton. Click any photo to view full size.</p>
+      </div>
+      <div class="gallery-grid stagger">
+        <div class="gallery-item reveal">
+          <img src="https://images.unsplash.com/photo-1615529162924-f8605388461d?auto=format&fit=crop&w=700&q=80" alt="Modern bedroom freshly painted" loading="lazy" onerror="this.parentElement.style.background='linear-gradient(135deg,#d4e8f5,#e8d4a0)'" />
+          <div class="gallery-item-overlay"><span class="gallery-item-label">Bedroom Refresh</span></div>
+        </div>
+        <div class="gallery-item reveal" style="transition-delay:.1s">
+          <img src="https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?auto=format&fit=crop&w=700&q=80" alt="Bright living room after painting" loading="lazy" onerror="this.parentElement.style.background='linear-gradient(135deg,#e8d4a0,#a0c4e8)'" />
+          <div class="gallery-item-overlay"><span class="gallery-item-label">Living Room</span></div>
+        </div>
+        <div class="gallery-item reveal" style="transition-delay:.2s">
+          <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=700&q=80" alt="House exterior painting Edmonton" loading="lazy" onerror="this.parentElement.style.background='linear-gradient(135deg,#c8d8e8,#e8c8a0)'" />
+          <div class="gallery-item-overlay"><span class="gallery-item-label">Exterior Repaint</span></div>
+        </div>
+        <div class="gallery-item reveal" style="transition-delay:.05s">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=700&q=80" alt="Precision painting detail work" loading="lazy" onerror="this.parentElement.style.background='linear-gradient(135deg,#f5e6c8,#c8a052)'" />
+          <div class="gallery-item-overlay"><span class="gallery-item-label">Detail Work</span></div>
+        </div>
+        <div class="gallery-item reveal" style="transition-delay:.15s">
+          <img src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&w=700&q=80" alt="Modern kitchen cabinet painting" loading="lazy" onerror="this.parentElement.style.background='linear-gradient(135deg,#e8f2fc,#3a7fc1)'" />
+          <div class="gallery-item-overlay"><span class="gallery-item-label">Kitchen Cabinets</span></div>
+        </div>
+        <div class="gallery-item reveal" style="transition-delay:.25s">
+          <img src="https://images.unsplash.com/photo-1497366858526-0766d5a8e55a?auto=format&fit=crop&w=700&q=80" alt="Commercial office painting Edmonton" loading="lazy" onerror="this.parentElement.style.background='linear-gradient(135deg,#e8f2fc,#a0c4e8)'" />
+          <div class="gallery-item-overlay"><span class="gallery-item-label">Commercial Space</span></div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:40px" class="reveal">
+        <a href="services.html" class="btn btn-outline-gold">View All Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ QUOTE CTA BANNER ══════════════════ -->
+  <div class="quote-cta-banner">
+    <div>
+      <div class="tag reveal" style="color:rgba(255,255,255,.6)"><span style="background:rgba(255,255,255,.3);width:18px;height:2px;display:inline-block;border-radius:1px;margin-right:8px"></span>Virtual Quoting</div>
+      <h2 class="reveal" style="transition-delay:.1s">Skip the House Call.<br>Get Your Quote <em style="color:var(--gold);font-style:italic">Virtually.</em></h2>
+      <p class="reveal" style="transition-delay:.2s;color:rgba(255,255,255,.7)">No appointment needed. Two simple options — upload your video walkthrough, or hop on a live video call with our team. Fast, free, and no obligation.</p>
+    </div>
+    <div class="quote-options reveal" style="transition-delay:.25s">
+      <a href="quote.html?method=upload" class="quote-option-btn">
+        <div class="qob-icon gold">📱</div>
+        <div class="qob-text">
+          <strong>Upload Video + Photos</strong>
+          <span>Record your space and upload — we review within 24hrs</span>
+        </div>
+        <div class="qob-arrow">→</div>
+      </a>
+      <a href="quote.html?method=call" class="quote-option-btn">
+        <div class="qob-icon blue">📹</div>
+        <div class="qob-text">
+          <strong>Book a Live Video Call</strong>
+          <span>Schedule a Zoom/FaceTime walkthrough with our team</span>
+        </div>
+        <div class="qob-arrow">→</div>
+      </a>
+    </div>
+  </div>
+
+  <!-- ══════════════════ WHY 25/7 ══════════════════ -->
+  <section class="section" id="why" style="background:var(--blue-light)">
+    <div class="container">
+      <div class="centered" style="margin-bottom:48px">
+        <div class="tag reveal">Why Choose Us</div>
+        <h2 class="section-title reveal" style="transition-delay:.1s">The <em style="color:var(--gold);font-style:italic">25/7</em> Difference</h2>
+        <p class="section-sub reveal" style="transition-delay:.2s">We didn't just build a painting company — we rebuilt the entire experience from the ground up.</p>
+      </div>
+      <div class="why-grid stagger">
+        <div class="why-card reveal">
+          <div class="why-icon gold">📱</div>
+          <h4>Virtual Quoting — No House Call</h4>
+          <p>Most companies need to visit before quoting. We built a system that gives you an accurate quote from a video alone — saving you days of back-and-forth.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-icon blue">⚡</div>
+          <h4>Same-Week Availability</h4>
+          <p>We schedule efficiently. Most customers get a booking confirmation within 24 hours of accepting their quote — not three weeks from now.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-icon gold">🧹</div>
+          <h4>The Clean-Room Standard</h4>
+          <p>We deep-clean after every job. When we leave, you shouldn't see any sign we were there — except for the flawless new paint on your walls.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-icon blue">🛡️</div>
+          <h4>100% Satisfaction Guarantee</h4>
+          <p>If anything isn't right after the final walkthrough, we come back and fix it — at no charge, no questions. That's our promise, on every job.</p>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:48px" class="reveal">
+        <a href="why-us.html" class="btn btn-outline-blue">Learn More About Our Standards →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ TESTIMONIALS ══════════════════ -->
+  <section class="section" style="background:var(--cream)">
+    <div class="container">
+      <div class="centered" style="margin-bottom:48px">
+        <div class="tag reveal">What Clients Say</div>
+        <h2 class="section-title reveal" style="transition-delay:.1s">Edmonton Homeowners <em style="color:var(--gold);font-style:italic">Love Us</em></h2>
+        <p class="section-sub reveal" style="transition-delay:.2s">Don't take our word for it. Here's what our clients say after working with 25/7 Painting.</p>
+      </div>
+      <div class="testi-grid stagger">
+        <div class="testi-card reveal">
+          <div class="testi-quote-mark">"</div>
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">I was blown away by how smooth the whole process was. Got a quote in less than a day without anyone coming to my house. Crew showed up on time, left the place spotless. The walls look absolutely incredible.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">SM</div>
+            <div class="testi-info">
+              <strong>Sarah M.</strong>
+              <span>Edmonton, AB — Residential</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal" style="transition-delay:.1s">
+          <div class="testi-quote-mark">"</div>
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">Used them for our office renovation. They worked over the weekend so we didn't lose a single business day. The quality was exceptional and the price was fair. Absolutely using 25/7 again.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">JK</div>
+            <div class="testi-info">
+              <strong>James K.</strong>
+              <span>Edmonton, AB — Commercial</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal" style="transition-delay:.2s">
+          <div class="testi-quote-mark">"</div>
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">Three other companies wanted to come for an "assessment" before quoting. 25/7 sent me a real quote within hours of my video. The paint job itself was perfect — my house looks brand new.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">AR</div>
+            <div class="testi-info">
+              <strong>Amara R.</strong>
+              <span>Edmonton, AB — Residential</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ FAQ ══════════════════ -->
+  <section class="section" id="faq">
+    <div class="container-sm">
+      <div class="centered" style="margin-bottom:48px">
+        <div class="tag reveal">FAQ</div>
+        <h2 class="section-title reveal" style="transition-delay:.1s">Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item reveal">
+          <button class="faq-btn">How does the virtual quote actually work? <div class="faq-chevron">▼</div></button>
+          <div class="faq-body"><p>You choose between uploading a video walkthrough of your space (along with photos), or booking a live video call with our team. Either way, our team reviews your space and sends a detailed, itemized quote by email — no in-person visit needed. Most quotes are delivered within 24 hours.</p></div>
+        </div>
+        <div class="faq-item reveal" style="transition-delay:.05s">
+          <button class="faq-btn">Is the virtual quote accurate? <div class="faq-chevron">▼</div></button>
+          <div class="faq-body"><p>Our virtual quotes are within 10–15% of the final price in almost all cases. We've refined our process over 500+ projects. On rare occasions where an on-site condition significantly changes the scope, we notify you before any work begins — no surprise charges.</p></div>
+        </div>
+        <div class="faq-item reveal" style="transition-delay:.1s">
+          <button class="faq-btn">How quickly can you start? <div class="faq-chevron">▼</div></button>
+          <div class="faq-body"><p>Most clients book within the same week of accepting their quote. If you need ASAP service, flag it in your quote request and we'll prioritize accordingly. We schedule efficiently to keep our calendar moving.</p></div>
+        </div>
+        <div class="faq-item reveal" style="transition-delay:.15s">
+          <button class="faq-btn">What paint brands do you use? <div class="faq-chevron">▼</div></button>
+          <div class="faq-body"><p>We work exclusively with premium Canadian brands including Benjamin Moore and Sherwin-Williams. All our paints are low-VOC and safe for families and pets. We can accommodate any specific brand preference — just mention it in your quote request.</p></div>
+        </div>
+        <div class="faq-item reveal" style="transition-delay:.2s">
+          <button class="faq-btn">Do I need to move furniture? <div class="faq-chevron">▼</div></button>
+          <div class="faq-body"><p>No. Our team moves and covers all furniture as part of our comprehensive site prep. We use professional drop cloths and plastic sheeting on every surface. When we're done, everything goes back exactly where we found it.</p></div>
+        </div>
+        <div class="faq-item reveal" style="transition-delay:.25s">
+          <button class="faq-btn">What does your satisfaction guarantee cover? <div class="faq-chevron">▼</div></button>
+          <div class="faq-body"><p>If you're not satisfied after the final walkthrough, we return to address any concerns at no additional cost — period. Our reputation is built on referrals. We can't afford to leave a single client unhappy, and we won't.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ GOLD BANNER ══════════════════ -->
+  <div class="gold-banner">
+    <div class="tag reveal" style="color:rgba(255,255,255,.7);justify-content:center"><span style="background:rgba(255,255,255,.4);width:18px;height:2px;border-radius:1px"></span>&nbsp; Ready to Start?</div>
+    <h2 class="reveal" style="transition-delay:.1s">Your Dream Space Starts with<br>a Free Virtual Quote</h2>
+    <p class="reveal" style="transition-delay:.2s">No house call. No pressure. Just great painting — delivered exactly when you need it.</p>
+    <a href="quote.html" class="btn btn-white btn-lg reveal" style="transition-delay:.3s">🎨 &nbsp;Get My Free Quote</a>
+    <div class="gold-banner-contact reveal" style="transition-delay:.4s">
+      <a href="tel:+17809998257">📞 &nbsp;(780) 999-8257</a>
+      <a href="mailto:info@257painting.ca">✉️ &nbsp;info@257painting.ca</a>
+      <span>📍 &nbsp;Edmonton, Alberta</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════ FOOTER ══════════════════ -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <div class="nav-logo-badge">25/7</div>
+          <span>25/7</span>&nbsp;Painting
+        </a>
+        <p>Edmonton's fastest and most precise painting company. Virtual quotes, same-week scheduling, and the clean-room standard on every single job.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="services.html">Residential Painting</a></li>
+          <li><a href="services.html">Commercial Painting</a></li>
+          <li><a href="services.html">Cabinet Refinishing</a></li>
+          <li><a href="services.html">Exterior Painting</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="why-us.html">Why 25/7</a></li>
+          <li><a href="quote.html">Get a Quote</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:+17809998257">📞 (780) 999-8257</a></li>
+          <li><a href="mailto:info@257painting.ca">✉ info@257painting.ca</a></li>
+          <li><a href="#">📍 Edmonton, Alberta</a></li>
+          <li><a href="#">⏰ Mon–Sat: 7am – 7pm</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 25/7 Painting Ltd. All rights reserved. Edmonton, AB.</p>
+      <div class="footer-socials">
+        <a href="#" class="social-btn" title="Instagram">IG</a>
+        <a href="#" class="social-btn" title="Facebook">FB</a>
+        <a href="#" class="social-btn" title="Google">G</a>
+        <a href="#" class="social-btn" title="TikTok">TK</a>
+      </div>
+    </div>
+  </footer>
+
+</div><!-- end page-wrap -->
+<script src="js/main.js"></script>
+</body>
+</html>

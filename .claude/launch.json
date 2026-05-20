@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "257painting",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "-p", "3579", "."],
+      "port": 3579
+    }
+  ]
+}

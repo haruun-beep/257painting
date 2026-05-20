@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get a Free Virtual Quote | 25/7 Painting Edmonton</title>
+  <meta name="description" content="Get a free virtual painting quote from 25/7 Painting. Upload a video walkthrough or book a live video call — no house visit needed. Quote within 24 hours." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-badge">25/7</div>
+    <span>25/7</span>&nbsp;Painting
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="why-us.html">Why 25/7</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="quote.html" class="nav-cta active">Get Free Quote</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="about.html">About</a>
+  <a href="why-us.html">Why 25/7</a>
+  <a href="contact.html">Contact</a>
+  <a href="quote.html" class="mobile-cta">Get Free Quote</a>
+</div>
+
+<div class="page-wrap">
+  <div class="quote-page">
+
+    <!-- Trust strip above form -->
+    <div style="max-width:820px;margin:0 auto 32px;display:flex;gap:24px;flex-wrap:wrap;justify-content:center">
+      <div style="display:flex;align-items:center;gap:8px;font-size:.82rem;color:var(--text-mid)">
+        <span style="color:var(--gold)">★★★★★</span> 5.0 Google Rating
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;font-size:.82rem;color:var(--text-mid)">⚡ Quote in 24 hours</div>
+      <div style="display:flex;align-items:center;gap:8px;font-size:.82rem;color:var(--text-mid)">🔒 Your info is private & never shared</div>
+      <div style="display:flex;align-items:center;gap:8px;font-size:.82rem;color:var(--text-mid)">✅ Zero obligation</div>
+    </div>
+
+    <div class="quote-wrap">
+
+      <!-- Header -->
+      <div class="quote-header-bar">
+        <div class="tag">Free Virtual Quote</div>
+        <h1>Skip the House Call</h1>
+        <p>Upload a video walkthrough + photos, or book a live video call with our team. Answer a few questions and we'll send your detailed quote within 24 hours.</p>
+      </div>
+
+      <!-- Progress -->
+      <div class="progress-bar-wrap" id="progressBar"></div>
+
+      <!-- Body -->
+      <div class="quote-body">
+
+        <!-- ── STEP 1: Method ── -->
+        <div class="q-step active" data-step="1">
+          <div class="q-step-title">How would you like your quote?</div>
+          <div class="q-step-sub">Choose the option that works best for you — both are free and get you an accurate quote.</div>
+          <div class="card-select" style="grid-template-columns:1fr 1fr;gap:20px">
+            <div class="card-opt" data-group="method" data-value="upload" onclick="selectCard(this,'method')" style="padding:32px 24px">
+              <div class="co-icon" style="font-size:3rem;margin-bottom:16px">📱</div>
+              <strong style="font-size:1.1rem;display:block;margin-bottom:8px">Upload Video + Photos</strong>
+              <small style="font-size:.88rem;line-height:1.6;display:block;color:var(--text-mid)">Record a walkthrough on your phone, upload it here along with photos. We review within 24 hours.</small>
+              <div style="margin-top:16px;padding:10px 14px;background:var(--gold-light);border-radius:8px;font-size:.78rem;color:var(--gold-dark);font-weight:600">✓ Most popular option</div>
+            </div>
+            <div class="card-opt" data-group="method" data-value="call" onclick="selectCard(this,'method')" style="padding:32px 24px">
+              <div class="co-icon" style="font-size:3rem;margin-bottom:16px">📹</div>
+              <strong style="font-size:1.1rem;display:block;margin-bottom:8px">Book a Live Video Call</strong>
+              <small style="font-size:.88rem;line-height:1.6;display:block;color:var(--text-mid)">Schedule a Zoom, FaceTime, or Google Meet walkthrough with one of our estimators.</small>
+              <div style="margin-top:16px;padding:10px 14px;background:var(--blue-light);border-radius:8px;font-size:.78rem;color:var(--blue-dark);font-weight:600">✓ Walk through together live</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── STEP 2: Project type ── -->
+        <div class="q-step" data-step="2">
+          <div class="q-step-title">What type of property is it?</div>
+          <div class="q-step-sub">This helps us assign the right estimator and tailor your quote accurately.</div>
+          <div class="card-select">
+            <div class="card-opt" data-group="property" data-value="house" onclick="selectCard(this,'property')">
+              <div class="co-icon">🏠</div>
+              <strong>House</strong>
+              <small>Detached or semi-detached</small>
+            </div>
+            <div class="card-opt" data-group="property" data-value="condo" onclick="selectCard(this,'property')">
+              <div class="co-icon">🏢</div>
+              <strong>Condo / Apt</strong>
+              <small>Unit in a complex</small>
+            </div>
+            <div class="card-opt" data-group="property" data-value="townhouse" onclick="selectCard(this,'property')">
+              <div class="co-icon">🏘️</div>
+              <strong>Townhouse</strong>
+              <small>Row or townhome</small>
+            </div>
+            <div class="card-opt" data-group="property" data-value="commercial" onclick="selectCard(this,'property')">
+              <div class="co-icon">🏬</div>
+              <strong>Commercial</strong>
+              <small>Office, retail, industrial</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── STEP 3: Surfaces ── -->
+        <div class="q-step" data-step="3">
+          <div class="q-step-title">What needs to be painted?</div>
+          <div class="q-step-sub">Select all that apply — you can add notes for us at the end.</div>
+          <div class="check-select">
+            <div class="check-opt" data-value="interior" onclick="toggleCheck(this)">
+              <div class="check-box"></div>
+              <div class="check-txt"><strong>🖌 Interior Walls</strong><small>Main room surfaces</small></div>
+            </div>
+            <div class="check-opt" data-value="ceilings" onclick="toggleCheck(this)">
+              <div class="check-box"></div>
+              <div class="check-txt"><strong>⬆️ Ceilings</strong><small>All or select rooms</small></div>
+            </div>
+            <div class="check-opt" data-value="trim" onclick="toggleCheck(this)">
+              <div class="check-box"></div>
+              <div class="check-txt"><strong>📐 Trim & Baseboards</strong><small>Doors, windows, baseboards</small></div>
+            </div>
+            <div class="check-opt" data-value="cabinets" onclick="toggleCheck(this)">
+              <div class="check-box"></div>
+              <div class="check-txt"><strong>🗄️ Cabinets</strong><small>Kitchen or bathroom</small></div>
+            </div>
+            <div class="check-opt" data-value="exterior" onclick="toggleCheck(this)">
+              <div class="check-box"></div>
+              <div class="check-txt"><strong>🏡 Exterior / Siding</strong><small>Outside walls & trim</small></div>
+            </div>
+            <div class="check-opt" data-value="garage" onclick="toggleCheck(this)">
+              <div class="check-box"></div>
+              <div class="check-txt"><strong>🚗 Garage</strong><small>Floor, walls or door</small></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── STEP 4A: Upload media (upload path) ── -->
+        <div class="q-step" data-step="4a">
+          <div class="q-step-title">Upload Your Video Walkthrough</div>
+          <div class="q-step-sub">Walk through your space slowly on camera — open every room, show us the walls, ceilings, trim, and anything specific. Then add photos below.</div>
+
+          <div class="upload-zone" id="videoZone" onclick="document.getElementById('videoInput').click()">
+            <input type="file" id="videoInput" accept="video/*" style="display:none" onchange="handleVideo(this)" />
+            <div class="uz-icon">🎥</div>
+            <h4>Upload Your Walkthrough Video</h4>
+            <p>Tap to browse or drag & drop your video file here</p>
+            <small>MP4, MOV, AVI — up to 500MB</small>
+            <div id="videoThumb" style="margin-top:16px;display:none">
+              <div style="display:inline-flex;align-items:center;gap:10px;background:var(--blue-light);border-radius:8px;padding:10px 16px;">
+                <span style="font-size:1.4rem">🎬</span>
+                <div><strong style="font-size:.88rem;color:var(--blue-dark)" id="videoName">video.mp4</strong><br><small style="color:var(--text-light)">Ready to submit</small></div>
+                <span style="color:var(--blue);font-size:1.2rem">✓</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:24px">
+            <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px">
+              <div style="flex:1;height:1px;background:var(--border)"></div>
+              <span style="font-size:.82rem;color:var(--text-light);white-space:nowrap">Also upload photos (recommended)</span>
+              <div style="flex:1;height:1px;background:var(--border)"></div>
+            </div>
+            <div class="upload-zone" id="photoZone" onclick="document.getElementById('photoInput').click()" style="padding:28px">
+              <input type="file" id="photoInput" accept="image/*" multiple style="display:none" onchange="handlePhotos(this)" />
+              <div class="uz-icon" style="font-size:2rem">📷</div>
+              <h4 style="font-size:.95rem">Add Photos</h4>
+              <p style="font-size:.82rem">Each room, key areas, anything you want us to pay attention to</p>
+              <small>JPG, PNG — up to 10MB each, max 20 photos</small>
+            </div>
+            <div class="upload-preview" id="photoPreview"></div>
+          </div>
+
+          <div style="background:var(--gold-light);border:1px solid rgba(201,160,82,.3);border-radius:12px;padding:16px 20px;margin-top:20px;font-size:.85rem;color:var(--gold-dark)">
+            💡 <strong>Tip:</strong> The better the video, the more accurate your quote. Walk slowly, narrate what you want done, and make sure the lighting is good.
+          </div>
+        </div>
+
+        <!-- ── STEP 4B: Book video call (call path) ── -->
+        <div class="q-step" data-step="4b">
+          <div class="q-step-title">Book Your Live Video Call</div>
+          <div class="q-step-sub">Pick a date and time that works for you. Our estimator will connect via Zoom, FaceTime, or Google Meet — your choice.</div>
+
+          <div style="margin-bottom:20px">
+            <label style="font-size:.82rem;font-weight:700;color:var(--text);display:block;margin-bottom:10px">Preferred Video Platform</label>
+            <div style="display:flex;gap:12px;flex-wrap:wrap">
+              <div class="card-opt" data-group="platform" data-value="zoom" onclick="selectCard(this,'platform')" style="flex:1;min-width:100px;padding:14px 12px">
+                <div class="co-icon" style="font-size:1.5rem;margin-bottom:6px">💻</div>
+                <strong style="font-size:.85rem">Zoom</strong>
+              </div>
+              <div class="card-opt" data-group="platform" data-value="facetime" onclick="selectCard(this,'platform')" style="flex:1;min-width:100px;padding:14px 12px">
+                <div class="co-icon" style="font-size:1.5rem;margin-bottom:6px">📱</div>
+                <strong style="font-size:.85rem">FaceTime</strong>
+              </div>
+              <div class="card-opt" data-group="platform" data-value="meet" onclick="selectCard(this,'platform')" style="flex:1;min-width:100px;padding:14px 12px">
+                <div class="co-icon" style="font-size:1.5rem;margin-bottom:6px">🎥</div>
+                <strong style="font-size:.85rem">Google Meet</strong>
+              </div>
+            </div>
+          </div>
+
+          <label style="font-size:.82rem;font-weight:700;color:var(--text);display:block;margin-bottom:14px">Select a Date & Time</label>
+          <div class="cal-wrap">
+            <div class="cal-days" id="calDays"></div>
+          </div>
+          <div id="selectedSlotDisplay" style="display:none;margin-top:16px;background:var(--gold-light);border:1px solid rgba(201,160,82,.3);border-radius:10px;padding:14px 18px;font-size:.88rem;color:var(--gold-dark);font-weight:600">
+            ✓ Selected: <span id="selectedSlotText"></span>
+          </div>
+        </div>
+
+        <!-- ── STEP 5: Contact info ── -->
+        <div class="q-step" data-step="5">
+          <div class="q-step-title">Where should we send your quote?</div>
+          <div class="q-step-sub">Your information is private and never shared. We'll reach out within 24 hours.</div>
+          <div class="form-row2">
+            <div class="form-group">
+              <label>First Name *</label>
+              <input type="text" id="firstName" placeholder="Jane" autocomplete="given-name" />
+            </div>
+            <div class="form-group">
+              <label>Last Name *</label>
+              <input type="text" id="lastName" placeholder="Smith" autocomplete="family-name" />
+            </div>
+          </div>
+          <div class="form-row2">
+            <div class="form-group">
+              <label>Email Address *</label>
+              <input type="email" id="email" placeholder="jane@example.com" autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label>Phone Number *</label>
+              <input type="tel" id="phone" placeholder="(780) 555-0123" autocomplete="tel" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Property Address *</label>
+            <input type="text" id="address" placeholder="123 Main Street, Edmonton, AB T5A 0A1" autocomplete="street-address" />
+          </div>
+          <div class="form-row2">
+            <div class="form-group">
+              <label>Best Time to Call</label>
+              <select id="callTime">
+                <option value="">Select a preference…</option>
+                <option>Morning (8am – 12pm)</option>
+                <option>Afternoon (12pm – 5pm)</option>
+                <option>Evening (5pm – 7pm)</option>
+                <option>Anytime</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Approximate Budget Range</label>
+              <select id="budget">
+                <option value="">Not sure yet</option>
+                <option>Under $1,000</option>
+                <option>$1,000 – $3,000</option>
+                <option>$3,000 – $7,000</option>
+                <option>$7,000 – $15,000</option>
+                <option>$15,000+</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Tell Us About Your Project</label>
+            <textarea id="notes" rows="4" placeholder="Describe what you're looking to have painted, any special requests, colour ideas, timeline, access instructions, etc."></textarea>
+          </div>
+
+          <!-- Upload path: book follow-up call slot -->
+          <div id="followUpCalSection" style="display:none;margin-top:8px">
+            <div style="height:1px;background:var(--border);margin:24px 0"></div>
+            <div style="font-weight:700;font-size:1rem;margin-bottom:6px">📅 Book Your Follow-Up Call</div>
+            <p style="font-size:.85rem;color:var(--text-mid);margin-bottom:20px">After reviewing your video and photos, we'll call you at this time to walk through your quote and answer any questions.</p>
+            <div class="cal-wrap">
+              <div class="cal-days" id="followUpCalDays"></div>
+            </div>
+            <div id="followUpSlotDisplay" style="display:none;margin-top:12px;background:var(--gold-light);border:1px solid rgba(201,160,82,.3);border-radius:10px;padding:12px 16px;font-size:.85rem;color:var(--gold-dark);font-weight:600">
+              ✓ Call booked: <span id="followUpSlotText"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── STEP 6: Confirmation ── -->
+        <div class="q-step" data-step="6">
+          <div class="confirm-screen">
+            <div class="confirm-icon">🎉</div>
+            <h2>You're All Set!</h2>
+            <p>Thank you — your quote request has been submitted. Our team will review your submission and follow up within <strong>24 hours</strong>.</p>
+            <div class="confirm-details" id="confirmDetails"></div>
+            <div style="display:flex;gap:16px;flex-wrap:wrap;justify-content:center">
+              <a href="index.html" class="btn btn-gold">← Back to Homepage</a>
+              <a href="contact.html" class="btn btn-outline-gold">📞 Contact Us Directly</a>
+            </div>
+            <p style="font-size:.78rem;color:var(--text-light);margin-top:24px">
+              📧 A confirmation email has been sent to <strong id="confirmEmail">your email address</strong>.<br>
+              Check your spam folder if you don't see it within a few minutes.
+            </p>
+          </div>
+        </div>
+
+        <!-- Nav Buttons -->
+        <div class="q-nav" id="qNav">
+          <button class="q-btn-back" id="btnBack" onclick="prevStep()" style="visibility:hidden">← Back</button>
+          <div class="q-counter" id="qCounter">Step 1 of 5</div>
+          <button class="q-btn-next" id="btnNext" onclick="nextStep()">Continue →</button>
+        </div>
+
+      </div><!-- end quote-body -->
+    </div><!-- end quote-wrap -->
+
+    <!-- Bottom trust -->
+    <div style="max-width:820px;margin:32px auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;text-align:center">
+      <div style="background:rgba(255,255,255,.8);border:1px solid var(--border);border-radius:12px;padding:20px 16px">
+        <div style="font-size:1.5rem;margin-bottom:8px">🔒</div>
+        <div style="font-size:.82rem;font-weight:700;color:var(--text);margin-bottom:4px">100% Private</div>
+        <div style="font-size:.76rem;color:var(--text-light)">Your info is never sold or shared</div>
+      </div>
+      <div style="background:rgba(255,255,255,.8);border:1px solid var(--border);border-radius:12px;padding:20px 16px">
+        <div style="font-size:1.5rem;margin-bottom:8px">⚡</div>
+        <div style="font-size:.82rem;font-weight:700;color:var(--text);margin-bottom:4px">24hr Turnaround</div>
+        <div style="font-size:.76rem;color:var(--text-light)">Quote in your inbox fast</div>
+      </div>
+      <div style="background:rgba(255,255,255,.8);border:1px solid var(--border);border-radius:12px;padding:20px 16px">
+        <div style="font-size:1.5rem;margin-bottom:8px">✅</div>
+        <div style="font-size:.82rem;font-weight:700;color:var(--text);margin-bottom:4px">Zero Obligation</div>
+        <div style="font-size:.76rem;color:var(--text-light)">No pressure, ever</div>
+      </div>
+    </div>
+
+  </div><!-- end quote-page -->
+</div><!-- end page-wrap -->
+
+<script src="js/main.js"></script>
+<script>
+/* ── Quote Wizard State ── */
+const state = {
+  method: null, property: null, surfaces: [],
+  platform: null, slot: null, followUpSlot: null,
+  videoFile: null, photoCount: 0,
+};
+
+let currentStep = 1;
+const stepLabels = ['Method', 'Property', 'Surfaces', 'Media / Call', 'Your Info'];
+
+function getStepIds() {
+  return state.method === 'call'
+    ? ['1','2','3','4b','5']
+    : ['1','2','3','4a','5'];
+}
+
+/* ── Progress Bar ── */
+function renderProgress() {
+  const bar = document.getElementById('progressBar');
+  const ids = getStepIds();
+  bar.innerHTML = '';
+  ids.forEach((id, i) => {
+    const stepNum = i + 1;
+    const outer = document.createElement('div');
+    outer.style.cssText = 'display:flex;align-items:center;flex-shrink:0;';
+
+    const wrap = document.createElement('div');
+    wrap.style.cssText = 'display:flex;flex-direction:column;align-items:center;flex-shrink:0;';
+
+    const dot = document.createElement('div');
+    dot.className = 'prog-dot' + (stepNum < currentStep ? ' done' : stepNum === currentStep ? ' active' : '');
+    dot.textContent = stepNum < currentStep ? '✓' : String(stepNum);
+
+    const lbl = document.createElement('div');
+    lbl.className = 'prog-label';
+    lbl.textContent = stepLabels[i];
+
+    wrap.append(dot, lbl);
+    outer.appendChild(wrap);
+
+    if (i < ids.length - 1) {
+      const line = document.createElement('div');
+      line.className = 'prog-line' + (stepNum < currentStep ? ' done' : '');
+      outer.appendChild(line);
+    }
+    bar.appendChild(outer);
+  });
+}
+
+function updateNav() {
+  const back = document.getElementById('btnBack');
+  const next = document.getElementById('btnNext');
+  const ctr  = document.getElementById('qCounter');
+  const nav  = document.getElementById('qNav');
+  const ids  = getStepIds();
+  const totalDisplayed = ids.length;
+  const pos = ids.findIndex(id => {
+    const stepId = state.method === 'call' ? ['1','2','3','4b','5'] : ['1','2','3','4a','5'];
+    return stepId[currentStep - 1] === id;
+  }) + 1 || currentStep;
+
+  back.style.visibility = currentStep > 1 ? 'visible' : 'hidden';
+  nav.style.display = currentStep === 6 ? 'none' : 'flex';
+
+  if (currentStep === 5) {
+    next.textContent = 'Submit My Request ✓';
+  } else {
+    next.textContent = 'Continue →';
+  }
+  ctr.textContent = `Step ${Math.min(currentStep, totalDisplayed)} of ${totalDisplayed}`;
+}
+
+function showStep(n) {
+  document.querySelectorAll('.q-step').forEach(s => s.classList.remove('active'));
+  // map step number to step data-step id
+  const ids = state.method === 'call'
+    ? ['1','2','3','4b','5','6']
+    : ['1','2','3','4a','5','6'];
+  const id = ids[n - 1] || String(n);
+  const el = document.querySelector(`.q-step[data-step="${id}"]`);
+  if (el) el.classList.add('active');
+  renderProgress();
+  updateNav();
+  window.scrollTo({ top: document.querySelector('.quote-wrap').offsetTop - 90, behavior: 'smooth' });
+
+  if (n === 5 && state.method === 'upload') {
+    document.getElementById('followUpCalSection').style.display = 'block';
+    buildCalendar('followUpCalDays', 'followUp');
+  }
+}
+
+function nextStep() {
+  if (currentStep === 1 && !state.method) { shake(); return; }
+  if (currentStep === 2 && !state.property) { shake(); return; }
+  if (currentStep === 3 && !state.surfaces.length) { shake(); return; }
+  if (currentStep === 5) { if (!validateContact()) return; submitForm(); return; }
+  currentStep++;
+  showStep(currentStep);
+}
+
+function prevStep() {
+  if (currentStep > 1) { currentStep--; showStep(currentStep); }
+}
+
+function shake() {
+  const body = document.querySelector('.q-step.active');
+  body.style.animation = 'none';
+  body.style.transform = 'translateX(8px)';
+  setTimeout(() => { body.style.transform = 'translateX(-8px)'; }, 80);
+  setTimeout(() => { body.style.transform = ''; }, 160);
+}
+
+/* ── Selectors ── */
+function selectCard(el, group) {
+  document.querySelectorAll(`.card-opt[data-group="${group}"]`).forEach(c => c.classList.remove('sel'));
+  el.classList.add('sel');
+  state[group] = el.dataset.value;
+  if (group === 'method' && state.method === 'call') buildCalendar('calDays', 'main');
+}
+
+function toggleCheck(el) {
+  el.classList.toggle('sel');
+  const val = el.dataset.value;
+  el.querySelector('.check-box').textContent = el.classList.contains('sel') ? '✓' : '';
+  if (el.classList.contains('sel')) {
+    if (!state.surfaces.includes(val)) state.surfaces.push(val);
+  } else {
+    state.surfaces = state.surfaces.filter(v => v !== val);
+  }
+}
+
+/* ── File Upload ── */
+function handleVideo(input) {
+  const file = input.files[0];
+  if (!file) return;
+  state.videoFile = file.name;
+  document.getElementById('videoName').textContent = file.name;
+  document.getElementById('videoThumb').style.display = 'block';
+  document.getElementById('videoZone').querySelector('h4').textContent = 'Video Uploaded ✓';
+}
+
+function handlePhotos(input) {
+  const preview = document.getElementById('photoPreview');
+  preview.innerHTML = '';
+  state.photoCount = Math.min(input.files.length, 20);
+  Array.from(input.files).slice(0, 20).forEach(file => {
+    const reader = new FileReader();
+    reader.onload = e => {
+      const img = document.createElement('img');
+      img.src = e.target.result;
+      img.style.cssText = 'width:72px;height:72px;object-fit:cover;border-radius:8px;border:2px solid var(--border)';
+      preview.appendChild(img);
+    };
+    reader.readAsDataURL(file);
+  });
+  document.getElementById('photoZone').querySelector('h4').textContent = `${state.photoCount} Photo(s) Selected ✓`;
+}
+
+/* ── Calendar ── */
+function buildCalendar(containerId, calType) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+  container.innerHTML = '';
+  const slots = ['9:00 AM', '11:00 AM', '1:00 PM', '3:00 PM'];
+  const days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+  const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const today = new Date();
+  let daysAdded = 0;
+  let d = new Date(today);
+  d.setDate(d.getDate() + 1);
+  while (daysAdded < 5) {
+    const dow = d.getDay();
+    if (dow !== 0) { // skip Sunday
+      const col = document.createElement('div');
+      col.className = 'cal-day';
+      const hdr = document.createElement('div');
+      hdr.className = 'cal-day-header';
+      hdr.innerHTML = `<span class="cal-day-date">${d.getDate()}</span>${days[dow]}, ${months[d.getMonth()]}`;
+      col.appendChild(hdr);
+      const slotWrap = document.createElement('div');
+      slotWrap.className = 'time-slots';
+      const dateStr = `${days[dow]} ${months[d.getMonth()]} ${d.getDate()}`;
+      slots.forEach(time => {
+        const slot = document.createElement('div');
+        slot.className = 'time-slot';
+        slot.textContent = time;
+        slot.addEventListener('click', () => {
+          container.querySelectorAll('.time-slot').forEach(s => s.classList.remove('sel'));
+          slot.classList.add('sel');
+          const fullStr = `${dateStr} at ${time}`;
+          if (calType === 'main') {
+            state.slot = fullStr;
+            const disp = document.getElementById('selectedSlotDisplay');
+            document.getElementById('selectedSlotText').textContent = fullStr;
+            if (disp) disp.style.display = 'block';
+          } else {
+            state.followUpSlot = fullStr;
+            const disp = document.getElementById('followUpSlotDisplay');
+            document.getElementById('followUpSlotText').textContent = fullStr;
+            if (disp) disp.style.display = 'block';
+          }
+        });
+        slotWrap.appendChild(slot);
+      });
+      col.appendChild(slotWrap);
+      container.appendChild(col);
+      daysAdded++;
+    }
+    d.setDate(d.getDate() + 1);
+  }
+}
+
+/* ── Validation ── */
+function validateContact() {
+  const fn = document.getElementById('firstName').value.trim();
+  const ln = document.getElementById('lastName').value.trim();
+  const em = document.getElementById('email').value.trim();
+  const ph = document.getElementById('phone').value.trim();
+  const addr = document.getElementById('address').value.trim();
+  if (!fn || !ln || !em || !ph || !addr) {
+    alert('Please fill in all required fields (name, email, phone, and address).');
+    return false;
+  }
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)) {
+    alert('Please enter a valid email address.');
+    return false;
+  }
+  return true;
+}
+
+/* ── Submit ── */
+function submitForm() {
+  const email = document.getElementById('email').value.trim();
+  const name = document.getElementById('firstName').value.trim();
+  const method = state.method === 'call' ? 'Live Video Call' : 'Upload Video + Photos';
+  const slotStr = state.method === 'call' ? state.slot : state.followUpSlot;
+
+  const details = document.getElementById('confirmDetails');
+  const rows = [
+    { l: 'Quote Method', v: method },
+    { l: 'Property Type', v: capitalize(state.property || '—') },
+    { l: 'Surfaces', v: state.surfaces.map(capitalize).join(', ') || '—' },
+    slotStr ? { l: state.method === 'call' ? 'Video Call Booked' : 'Follow-Up Call', v: slotStr } : null,
+    { l: 'Contact', v: `${name} — ${email}` },
+  ].filter(Boolean);
+
+  details.innerHTML = rows.map(r => `
+    <div class="confirm-row">
+      <span class="cl">${r.l}</span>
+      <span class="cv">${r.v}</span>
+    </div>
+  `).join('');
+
+  document.getElementById('confirmEmail').textContent = email;
+  currentStep = 6;
+  showStep(6);
+}
+
+function capitalize(s) { return s ? s.charAt(0).toUpperCase() + s.slice(1) : ''; }
+
+/* ── Init ── */
+const params = new URLSearchParams(location.search);
+if (params.get('method') === 'call') {
+  state.method = 'call';
+}
+renderProgress();
+updateNav();
+</script>
+</body>
+</html>
